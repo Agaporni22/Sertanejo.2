@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     alternaContraste.addEventListener('click', function(){
          document.body.classList.toggle('alto-contraste')
+    
  })
 
     let tamanhoAtualFonte = 1;
@@ -27,10 +28,18 @@ document.addEventListener('DOMContentLoaded', function(){
 
     });
 
+     
     diminuiFonteBotao.addEventListener('click', function(){
         tamanhoAtualFonte -= 0.1;
         document.body.style.fontSize = `${tamanhoAtualFonte}rem`;
 
     });
 
+    
+
 });
+
+ScrollReveal().reveal("#início", { delay: 500});
+ScrollReveal().reveal("#sertanejo", { delay: 500});
+ScrollReveal().reveal("#galeria", { delay: 500});
+ScrollReveal().reveal("#contato", { delay: 500});
